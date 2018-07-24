@@ -1,157 +1,367 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-       
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/bootstrap-responsive.css">
-        <link rel="stylesheet" href="css/custom-styles.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/component.css">
-        <link rel="stylesheet" href="css/font-awesome-ie7.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <script src="js/modernizr.custom.js"></script>
-        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
-        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-            <div class="header-wrapper">
-                <div class="container">
-                    <div class="row-fluid">
-                    
-                        <div class="site-name">
-                            <h1>TENZIN NGAWANG</h1>
-                        </div>
-                    
-                    
-                        <div class="menu-icons">
-                            <ul>
-                                <li><a href="#"><i class="fw-icon-facebook i"></i></a> </li>
-                                <li><a href="#"><i class="fw-icon-twitter i"></i></a> </li>
-                                <li><a href="#"><i class="fw-icon-linkedin i"></i></a> </li>
-                                <li>
-                                    <form id="custom-search-form" class="form-search form-horizontal pull-right">
-                                        <div class="input-append">
-                                            <input type="text" class="search-query">
-                                            <button type="submit" class="btn"><i class="fw-icon-search"></i></button>
-                                        </div>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="cust-form">
-                            <form id="custom-search-form" class="form-search form-horizontal pull-right">
-                                
-                                    <input type="text" class="search-query">
-                                    <button type="submit" class="btn"><i class="fw-icon-search"></i></button>
-                                
-                            </form>
-                        </div>
-                    
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-            <div class="menu">
-                
-                        <div class="navbar">
-                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                                <i class="fw-icon-th-list"></i>
-                            </a>
-                            <div class="nav-collapse collapse">
-                                <ul class="nav">
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="About.html">About</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Socials</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div><!--/.nav-collapse -->
-                        </div>
-						<div class="mini-menu">
+        <!--Custom css-->
+        <link rel="stylesheet" href="style.css">
+
+        <title>Hello, world!</title>
+      </head>
+      <body>
+          <nav id="navbar-example2" class="navbar navbar-dark bg-dark navbar-full">
+      <a class="navbar-brand" href="#">TENZIN NGAWANG</a>
+
+              <ul class="nav nav-pills">
+                  <div class="Menu-text">
+        <li class="nav-item">
+          <a class="nav-link btn btn-sm btn-outline-primary" href="#whatWeDo">About me</a>
+        </li>
+                  </div>
+                  <div class="Menu-text">
+        <li class="nav-item">
+          <a class="nav-link btn btn-sm btn-outline-primary" href="#aboutMe">Resume</a>
+        </li>
+                  </div>
+                  <div class="Menu-text">
+        <li class="nav-item">
+          <a class="nav-link btn btn-sm btn-outline-primary" href="#projectFun">Projects</a>
+        </li>
+                  </div>
+                  <div class="Menu-text">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn btn-sm btn-outline-primary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Links</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item " href="#projectFun"></a>
+            <a class="dropdown-item" href="#two">two</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#three">three</a>
           </div>
+        </li>
+                  </div>
+      </ul>
+    </nav>
+
+
+          <section id="cover">
+          <div id="cover-caption">
+            <div class="container">
+              <div class="col-sm-10 col-sm-offset-1">            
+                   <br>
+                   <a href="#nav-main" class="btn btn-secondary-outline btn-sm" role="button">&darr;</a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+    <section id="carousel">
+    <div id="carousel-home" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-home" data-slide-to="1"></li>
+        <li data-target="#carousel-home" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/developer.png" alt="Woman taking picture">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>DEVELOPER</h3>
+            <p>Developer don't take day off cause the working happen inside their head not in office</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/road.jpg" alt="A wet spider web">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>ONE WAY </h3>
+            <p>A good programmer looks both ways before crossing a one-way street.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/brain.jpeg" alt="Two hand makes heart">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>MACHINE </h3>
+            <p>Our ideas are like machine, joining them will end up in better result.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </section>
+
+    <section id="what-we-do">
+      <div class="section-content">
+
+        <div class="container">
+          <h2 id="whatWeDo">> Hello World! I'M TENZIN</h2>
+        <p class="lead"></p>
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="card-deck">
+              <div class="card text-white bg-info mb-3 border-dark mb-3">
+                <div class="card-block">
+                    <u> <h4 class="card-title text-center">INTRO</h4></u>
+                    <h6>> tenzin.Origin( );</h6>
+                  <p class="card-subtitle">&nbsp; &nbsp;> Tibet</p>
+                    <h6>> tenzin.growup( );</h6>
+                  <p class="card-subtitle">&nbsp; &nbsp;> Nepal, India</p>
+                    <h6>> tenzin.speaks( );</h6>
+                  <p class="card-subtitle">&nbsp; &nbsp;> Tibetan, Hindi, English</p>
+                </div>
+              </div>
+
+              <div class="card  border-dark mb-3">
+                <div class="card-block">
+                    <u> <h4 class="card-title text-center">EDUCATION</h4></u>
+                    <h6>> education.College( );</h6>
+                  <p class="card-subtitle">&nbsp; &nbsp;> Queens College</p>
+                    <h6>> education.Major( );</h6>
+                  <p class="card-subtitle">&nbsp; &nbsp;> Computer Science</p>
+                    <h6>> education.Graduated( );</h6>
+                  <p class="card-subtitle">&nbsp; &nbsp;> May 2018</p>
+                </div>
+              </div>
+
+              <div class="card text-white bg-dark mb-3 border-dark mb-3">
+                <div class="card-block">
+                    <u><h4 class="card-title text-center">INTERESTS</h4></u>
+                    <h6>> interests.tech( );</h6>
+                  <p class="card-subtitle">&nbsp; &nbsp;> Code, Design, music</p>
+                    <h6>> interests.sports( );</h6>
+                  <p class="card-subtitle">&nbsp; &nbsp;> soccer, bike, swimming</p>
+                    <h6>> interest.other( );</h6>
+                  <p class="card-subtitle">&nbsp; &nbsp;> tea, gaming, food</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-content">
+        <div class="container">
+          <div class="col-md">
+            <div class="about-text">
+              <h3 class="about me text-center" id="aboutMe">Resume</h3>
+                
+                <div class="education">
+                <h4>Education </h4>
+                <hr>
+                <div class="parts">
+                <b>
+                <span>Queens College</span>
+                    <span class="right"><i>2016-2018</i></span><br/>
+                    <span>Computer Science, B.A.</span>
+                    <span class="right"><i>New York City, NY</i></span><br/>
+                </b>
+                <br>
+              <ul style="list-style: circle;">
+                <li>Data Structures</li>
+				<li>Theory of Computation</li>
+				<li>Computer Archetechture</li>
+                <li>Database(MySQL) </li> 
+                <li>Design and Analysis of Algorithms</li>
+                <li>Principal of Programming Language</li>
+                <li>Artiticial intelligence</li>
+                <li>Object-Oriented DB</li>
+                <li>Mobile Application Development</li>
+               </ul>
+
+              <a  class="btn btn-sm btn-outline-secondary">JAVA</a>
+              <a  class="btn btn-sm btn-outline-secondary">MySQL</a>
+                <a class="btn btn-sm btn-outline-secondary">OODB</a>
+                <a  class="btn btn-sm btn-outline-secondary">GIT</a>
+                <a  class="btn btn-sm btn-outline-secondary">C++</a>
+                    <br/>
+                    <br/>
+            </div>
+                
+                <div class="parts">
+              
+                <b>
+                <span>LaGuardia Community College</span>
+                    <span class="right"><i>2013-2016</i></span><br/>
+                    <span>Computer Science, A.S.</span>
+                    <span class="right"><i>New York City, NY</i></span><br/>
+                </b>
+                <br>
+              <ul style="list-style: circle;">
+                <li>C++ Programming</li>
+				<li>Object-Oriented Programming</li>
+				<li>Discrete Structure</li>
+                <li>Fundamentals of Computer Programming </li> 
+                <li>Computer organization and Assembly Language</li>
+               </ul>
+                
+              <a  class="btn btn-sm btn-outline-secondary">C++</a>
+                <a  class="btn btn-sm btn-outline-secondary">JAVA</a>
+                    <br/>
+                    <br/>
+            </div>
+              </div>
+                
+                <div class="Work">
+                <h4>Volunteers</h4>
+                <hr>
+                <div class="parts">
+                <b>
+                <span>TCV High School</span>
+                    <span class="right"><i>209-2011</i></span><br/>
+                    <span>Tech incharge, Workshops</span>
+                    <span class="right"><i>Karnataka,Sout India</i></span><br/>
+                </b>
+                <br>
+              <ul style="list-style: circle;">
+                <li>Web developement</li>
+				<li>Presentation</li>
+				<li>Sound System management</li>
+                <li>Photoshop </li> 
+                <li>Video Editing</li>
+                <li>Logo Design</li>
+               </ul>
+                
+              <a  class="btn btn-sm btn-outline-secondary">HTML</a>
+              <a  class="btn btn-sm btn-outline-secondary">CSS</a>
+                <a class="btn btn-sm btn-outline-secondary">MS PP</a>
+                <a  class="btn btn-sm btn-outline-secondary">PHOTOSHOP</a>
+                <a  class="btn btn-sm btn-outline-secondary">ADOBE</a>
+                    <br/>
+                    <br/>
+            </div>
+                
+                <div class="parts">
+              
+                <b>
+                <span>Upper TCV School</span>
+                    <span class="right"><i>2007-2009</i></span><br/>
+                    <span>Cyber Cafe in charge, Computer lap in charge</span>
+                    <span class="right"><i>Himachal, North India</i></span><br/>
+                </b>
+                <br>
+              <ul style="list-style: circle;">
+                <li>Installation of OS</li>
+				<li>Computer Hardware setup</li>
+				<li>Network wiring</li>
+                <li>Web developement </li> 
+                <li>Video Editing</li>
+                  <li>Photoshop</li>
+               </ul>
+                
+              <a  class="btn btn-sm btn-outline-secondary">Window OS</a>
+                <a  class="btn btn-sm btn-outline-secondary">Network</a>
+                     <a  class="btn btn-sm btn-outline-secondary">HTML</a>
+                     <a  class="btn btn-sm btn-outline-secondary">CSS</a>
+                     <a  class="btn btn-sm btn-outline-secondary">ADOBE PREMIERE</a>
+                     <a  class="btn btn-sm btn-outline-secondary">PHOTOSHOP</a>
                     
+                    <br/>
+                    <br/>
             </div>
-            </div>
-            <div class="container bg-white">
-                <div class="row-fluid">
-                    <div class="span12 ">
-                        <div class="main-caption">
-                            <h1>To Change the World, First We Need to Change Ourself.</h1>
-                            <h6>said by some one just like you.</h6>
-                            <a href="#" class="btn">KNOW ME</a>
-                        </div>
-                    </div>
-                 </div>
-                <div class="row-fluid">
-                    <div class="span12">
-                        <div class="banner">
-                          <div class="carousel slide" id="myCarousel">
-                                          <!-- Carousel items -->
-                              <div class="carousel-inner">
-                                  <div class="item">
-                                      <img src="img/banner1.jpg" alt="">
-                                  </div>
-                                  <div class="item active">
-                                      <img src="img/banner2.jpg" alt="">
-                                  </div>
-                                  <div class="item">
-                                      <img src="img/banner3.jpg" alt="">
-                                  </div>
-                              </div>
-                              <a data-slide="prev" href="#myCarousel" class="carousel-control left"><i class="fw-icon-chevron-left"></i></a>
-                              <a data-slide="next" href="#myCarousel" class="carousel-control right"><i class="fw-icon-chevron-right"></i></a>
-                          </div>
                 </div>
-                    </div>
-                </div>
+                
+              </div>
+                          
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <section id="news">
+      <div class="section-content">
+        <div class="container">
+          <h3 class="project text-center" id="projectFun">Project + FUN</h3>
+
+          <hr>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card-columns">
+      <div class="card">
+        <img class="card-img-top" src="img/tipCalc.gif" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Grocery List Manager</h5>
+          <p class="card-text">Create multiple grocery lists. Add, delete and change the quantity of items in your lists. Checked and unchecked individually or together.</p>
+        </div>
+      </div>
+      <div class="card p-3">
+          <img class="card-img-top" src="img/TEAMTIBETNY.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SOCCER TEAM LOGO</h5>
+          <p class="card-text">Create multiple grocery lists. Add, delete and change the quantity of items in your lists. Checked and unchecked individually or together.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src=".../100px160/" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card bg-primary text-white text-center p-3">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+          <footer class="blockquote-footer">
+            <small>
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src=".../100px260/" alt="Card image">
+      </div>
+      <div class="card p-3 text-right">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
             </div>
 
-            <div class="container bg-white">
-                <div class="row-fluid">
-                 
-                           <div class="featured-images">
-                            <ul class="grid effect-8" id="grid">
-                              <li>
-                                <div class="block">
-                                 
-                                        <h4>TENZIN NGAWANG</h4>
-                                        <h6>We are builder of our own life.</h6>
-                                      
-                                </div>
-                              </li>
-                            </ul>
-                                
-        
-       <script src="js/jquery-1.9.1.js"></script> 
-<script src="js/bootstrap.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/imagesloaded.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/AnimOnScroll.js"></script>
-    
-    <script>
-      new AnimOnScroll( document.getElementById( 'grid' ), {
-        minDuration : 0.4,
-        maxDuration : 0.7,
-        viewportFactor : 0.2
-      } );
-    </script>
-<script>
-$('#myCarousel').carousel({
-    interval: 1800
-});
-</script>
-    </body>
-</html>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+      </body>
+    </html>
